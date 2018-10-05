@@ -20,7 +20,7 @@ function sendTweet($mensaje){
         return $twitter->buildOauth($url, $requestMethod)->setPostfields($postfields)->performRequest();
 }
 
-$mensaje = "Tutorial realizado con éxito en @GeekyTheory. #PHP + #Twitter: Cómo enviar tweets desde PHP |  http://geekytheory.com/php-twitter-como-enviar-tweets-desde-php"
+$mensaje = "Tutorial realizado con éxito en @GeekyTheory. #PHP + #Twitter: Cómo enviar tweets desde PHP |  http://geekytheory.com/php-twitter-como-enviar-tweets-desde-php";
 $respuesta = sendTweet($mensaje);
 $json = json_decode($respuesta);
 
